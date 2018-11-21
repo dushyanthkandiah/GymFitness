@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    tools:style="@style/CardView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgViewTrainer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/trainer_select"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/lblTrainerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Kevin Anderson"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/lblTrainerGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Gender : Male"/>
+
+            <TextView
+                android:id="@+id/lblTrainerDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Date of Birth : 1983-05-20"/>
+
+            <TextView
+                android:id="@+id/lblTrainerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:text="Phone : 03-24588875"/>
+
+            <TextView
+                android:id="@+id/lblTrainerExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Experience : 2 Years &amp; 6 Months"/>
+
+            <TextView
+                android:id="@+id/lblTrainerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:text="Address : Kuala Lumpur"/>
+
+            <Button
+                android:id="@+id/btnSelectTrainer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Select"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedbutton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.v7.widget.CardView>
